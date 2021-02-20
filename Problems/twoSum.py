@@ -18,3 +18,14 @@ def twoNumberSum(array, targetSum):
                 return [firstNum, secondNum]
     return []
 
+# Solution 2
+
+def twoNumberSum(array, targetSum):
+    nums = {}
+    for num in array:
+        potentialMatch = targetSum - num
+        if potentialMatch in nums:
+            return [potentialMatch, num]
+        else:
+            nums[num] = True
+    return []
