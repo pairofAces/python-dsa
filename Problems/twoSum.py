@@ -6,3 +6,5 @@
         # return the 2 numbers in an array
     # if no numbers add up to the target
         # return an empty array
+
+def twoNumberSum(array, targetSum):
