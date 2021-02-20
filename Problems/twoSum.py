@@ -8,7 +8,7 @@
         # return an empty array
 
 # Solution 1
-# O(n^2) time | O(1) space
+# O(n^2) time | O(1) space -> b/c storing info in just 2 variables
 def twoNumberSum(array, targetSum):
     for i in range(len(array) - 1):
         firstNum = array[i]
@@ -19,7 +19,7 @@ def twoNumberSum(array, targetSum):
     return []
 
 # Solution 2
-
+# O(n) time | O(n) space -> b/c using a hash table
 def twoNumberSum(array, targetSum):
     nums = {}
     for num in array:
