@@ -31,7 +31,8 @@ def twoNumberSum(array, targetSum):
     return []
 
 # Solution 3 ->sorting the array initially
-# 
+# O(nlog(n)) time -> using the sorting method 
+# O(1) space
 def twoNumberSum(array, targetSum):
     array.sort()
     left = 0
