@@ -29,3 +29,14 @@ def twoNumberSum(array, targetSum):
         else:
             nums[num] = True
     return []
+
+# Solution 3 ->sorting the array initially
+
+def twoNumberSum(array, targetSum):
+    array.sort()
+    left = 0
+    right = len(array) - 1
+    while left < right:
+        currentSum = array[left] + array[right]
+        if currentSum == targetSum:
+            
