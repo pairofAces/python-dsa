@@ -8,3 +8,8 @@
 # Subsequence: a set of numbers that don't have to be adjacent in
 # the array but that are in the same order as they appear in the 
 # initial array.
+
+def isValidSubsequence(array, sequence):
+    # create index variables for array and the sequence
+    arrIdx = 0
+    seqIdx = 0
