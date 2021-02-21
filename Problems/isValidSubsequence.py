@@ -26,3 +26,10 @@ def isValidSubsequence(array, sequence):
         
         # after getting out of the 'if' logic and the sequence index
         # is successfully incremented, increment the array's index
+        arrIdx += 1
+    
+    # after the while loop, return the boolean value of
+    # seqInx is equal to the length of the sequence.
+        # at this point the sequence index should be the same as 
+        # the length of the sequence and therefore will be 'TRUE'
+        
