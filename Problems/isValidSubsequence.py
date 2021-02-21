@@ -13,3 +13,7 @@ def isValidSubsequence(array, sequence):
     # create index variables for array and the sequence
     arrIdx = 0
     seqIdx = 0
+    
+    # create a while loop for when the array's index is less than
+    # the array's length AND the same for the sequence index and length
+    while arrIdx < len(array) and seqIdx < len(sequence):
