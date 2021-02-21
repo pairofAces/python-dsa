@@ -32,4 +32,4 @@ def isValidSubsequence(array, sequence):
     # seqInx is equal to the length of the sequence.
         # at this point the sequence index should be the same as 
         # the length of the sequence and therefore will be 'TRUE'
-        
+    return seqIdx == len(sequence) 
