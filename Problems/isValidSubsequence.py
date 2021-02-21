@@ -17,3 +17,12 @@ def isValidSubsequence(array, sequence):
     # create a while loop for when the array's index is less than
     # the array's length AND the same for the sequence index and length
     while arrIdx < len(array) and seqIdx < len(sequence):
+        
+        # at this point, if the element at the array's index is 
+        # equal to the element at the sequence's index,
+        # increment the sequence index
+        if array[arrIdx] = sequence[seqIdx]:
+            seqIdx += 1
+        
+        # after getting out of the 'if' logic and the sequence index
+        # is successfully incremented, increment the array's index
