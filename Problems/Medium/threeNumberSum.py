@@ -16,3 +16,8 @@ def threeNumberSum(array, targetSum):
     # use a for loop to traverse the original array
     for i in range(len(array - 2)):
         # create two pointer variables
+        left = i + 1
+        right = len(array) - 1
+        # use a while loop to activate when the left < right
+        while left < right:
+            
