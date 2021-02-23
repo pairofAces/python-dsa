@@ -23,4 +23,11 @@ def threeNumberSum(array, targetSum):
             currentSum = array[i] + array[left] + array[right]
             # use 'if' logic to check is currentSum = targetSum
             if currentSum == targetSum:
-                
+                triplets.append([array[i], array[left], array[right]])
+                left += 1
+                right -= 1
+            elif currentSum < targetSum:
+                left += 1
+            elif currentSum > targetSum:
+                right -= 1
+    
