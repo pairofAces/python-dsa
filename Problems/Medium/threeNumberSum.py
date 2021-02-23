@@ -8,6 +8,10 @@
         # the triplets need to be returned in an array
 # if no triplets are found, return and empty array
 
+
+# Solution
+# Time Complexity: O(n^2) time
+# Space Complexity: O(n) space
 def threeNumberSum(array, targetSum):
     # first sort the array
     array.sort()
