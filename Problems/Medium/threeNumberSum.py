@@ -11,3 +11,7 @@
 def threeNumberSum(array, targetSum):
     # first sort the array
     array.sort()
+    # create the empty array in a var
+    triplets = []
+    # use a for loop to traverse the original array
+    
