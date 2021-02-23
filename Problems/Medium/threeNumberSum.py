@@ -20,4 +20,7 @@ def threeNumberSum(array, targetSum):
         right = len(array) - 1
         # use a while loop to activate when the left < right
         while left < right:
-            
+            currentSum = array[i] + array[left] + array[right]
+            # use 'if' logic to check is currentSum = targetSum
+            if currentSum == targetSum:
+                
