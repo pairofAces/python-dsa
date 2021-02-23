@@ -14,4 +14,5 @@ def threeNumberSum(array, targetSum):
     # create the empty array in a var
     triplets = []
     # use a for loop to traverse the original array
-    
+    for i in range(len(array - 2)):
+        # create two pointer variables
