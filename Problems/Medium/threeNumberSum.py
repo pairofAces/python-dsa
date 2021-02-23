@@ -9,4 +9,5 @@
 # if no triplets are found, return and empty array
 
 def threeNumberSum(array, targetSum):
-    
+    # first sort the array
+    array.sort()
