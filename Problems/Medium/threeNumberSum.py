@@ -30,4 +30,5 @@ def threeNumberSum(array, targetSum):
                 left += 1
             elif currentSum > targetSum:
                 right -= 1
-    
+    # finally, return the triplets array
+    return triplets
