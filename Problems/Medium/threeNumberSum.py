@@ -6,4 +6,7 @@
     # function should find all triplets in the array that add up to the 
     # target integer
         # the triplets need to be returned in an array
+# if no triplets are found, return and empty array
 
+def threeNumberSum(array, targetSum):
+    
