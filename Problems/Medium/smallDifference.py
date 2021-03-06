@@ -18,3 +18,12 @@ def smallestDifference(arrayOne, arrayTwo):
     smallest = Float("inf")
     current = Float("inf")
     smallestPair = []
+
+    # use a while loop for when the idx variables ar less than the 
+    # respected array lengths
+    while idxOne < len(arrayOne) and idxTwo < len(arrayTwo):
+        # create variables for the 1st and 2nd numbers
+        firstNum = arrayOne[idxOne]
+        secondNum = arrayTwo[idxTwo]
+        # use an if statement to compare the firstNum and secondNum
+        
