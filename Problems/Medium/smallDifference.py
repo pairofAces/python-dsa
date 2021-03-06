@@ -26,4 +26,16 @@ def smallestDifference(arrayOne, arrayTwo):
         firstNum = arrayOne[idxOne]
         secondNum = arrayTwo[idxTwo]
         # use an if statement to compare the firstNum and secondNum
-        
+        if firstNum < secondNum:
+            current = secondNum - firstNum
+            idxOne += 1
+        elif firstNum > secondNum:
+            current = firstNum - secondNum
+            idxTwo += 1
+        else:
+            return [firstNum, secondNum]
+        if smallest > current:
+            smallest = current
+            smallestPair = [firstNum, secondNum]
+    
+     
