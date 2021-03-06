@@ -7,6 +7,10 @@
     # return the array containing these two numbers
     # first number should be from first array and second
     # number should be from the second array
+
+# Time Complexity: O(n log(n)) time
+
+# Space Complexty: O(1) Constant space
 def smallestDifference(arrayOne, arrayTwo):
     # sort both arrays
     arrayOne.sort()
