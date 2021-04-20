@@ -5,6 +5,15 @@
 # takes an empty array and taverses the tree, from left-to-right, storing 
 # all of the node names into the input array and return it. 
 
+
+# Solution
+    # Complexity Analysis
+        # Time: O(v + e), where (v) is the number of vertices on the graph
+        # and (e) are the number of edges
+
+        # Space: O(v) space, where (v) is the number of vertices,
+        # whos names had to be appended to the input array
+        
 # create the node class
 class Node:
     def __init__(self, name):
