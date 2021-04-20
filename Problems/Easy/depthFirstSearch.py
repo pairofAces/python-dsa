@@ -16,4 +16,12 @@ class Node:
         return self
     
     def depthFirstSearch(self, array):
+        # append the name to the input array
+        array.append(self.name)
+
+        # for each node (child), invoke depthFirstSearch
+        for child in self.children:
+            child.depthFirstSearch(array)
         
+        # return the final, mutated input array
+        return array
