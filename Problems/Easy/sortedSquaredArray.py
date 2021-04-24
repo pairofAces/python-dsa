@@ -46,7 +46,7 @@ def sortedSquaredArrays(array):
     # create index pointers for the positions of the smallest 
     # and largest values
     smallerIndex = 0
-    largerIndex = array.length - 1
+    largerIndex = len(array) - 1
 
     # initiate a for loop starting from the ending of the
     # input array -> using the reversed method
