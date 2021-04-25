@@ -33,7 +33,29 @@ class BST:
     
     # create the remove method
     def remove(self, value):
-
+        if value < self.value:
+            if self.left is not None:
+                self.left.remove(value, self)
+        elif value > self.vlue:
+            if self.right is not None:
+                self.right.remove(value, self)
+        else:
+            if self.left is not None and self.right is not None:
+                # create a helper function to set the value
+                self.value = self.right.getMinValue()
+                self.right.remove(self.value, self
+            elif parent is None:
+                if self.left is not None:
+                    self.value = self.left.value
+                    self.right = self.left.right
+                    self.left = self.left.left
+                elif self.right is not None:
+                    self.value = self.right.value
+                    self.right = self.right.left
+                    self.left = self.right.right
+                else:
+                    # since this is a single node tree, do nothing
+                    pass
         return self
 
     # create the contains method
