@@ -56,7 +56,19 @@ class BST:
                 else:
                     # since this is a single node tree, do nothing
                     pass
+            elif parent.left == self:
+                parent.left = self.left if self.left is not None else self.right
+            elif parent.right == self:
+                parentr.right = self.left if self.left is not None else self.right
         return self
+
+    # create the helper method used in the remove class method
+    # taking self as the input
+    def getMinValue(self):
+        if self.left is None:
+            return self.values
+        else:
+            return self.left.getMinValue();
 
     # create the contains method
     def contains(self, value):
