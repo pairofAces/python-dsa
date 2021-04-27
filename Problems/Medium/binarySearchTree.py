@@ -13,6 +13,9 @@ class BST:
         self.right = None
     
     # create the inset method
+
+        # Time: O(n) time, where (n) is the size of the input value
+        # Space: O(n) space, where (n) is the size of the BST
     def insert(self, value):
         # if the value is less than the originally initialized value
         # then the left value will become the new, lower value
@@ -32,6 +35,9 @@ class BST:
         return self
     
     # create the remove method
+        # time: O(n) time
+        # space: O(n) space
+
     def remove(self, value):
         if value < self.value:
             if self.left is not None:
@@ -71,6 +77,9 @@ class BST:
             return self.left.getMinValue();
 
     # create the contains method
+        # time: O(n) time
+        # space: O(n) space
+        
     def contains(self, value):
         # if the value is less than the initialized value
         if value < self.value:
