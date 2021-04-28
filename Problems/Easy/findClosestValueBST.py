@@ -5,6 +5,14 @@
 
     # assume there's only one closest value
 
+# Solution 1
+    # Complexity
+        # Average Time: O(log(n)) time
+        # Average Space: O(log(n)) space
+
+        # Worst case Time: O(n) time
+        # Worst case Space: O(n) space
+
 def findClosestValueInBst(tree, target):
     # create a helper method, then invoke within this function
 
