@@ -5,6 +5,15 @@
 
     # assume there's only one closest value
 
+#  BOTH SOLUTIONS USE THE BST CLASS BELOW
+    # this is the class of the input tree
+class BST:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+
 # Solution 1
     # Complexity
         # Average Time: O(log(n)) time
@@ -43,3 +52,13 @@ def bstHelper(tree, target, closest):
     else:
         return closest
 
+# ------------------------------------------------------------------------
+
+# Solution 2 - Optimized
+
+def findClosestValueInBst(tree, target):
+    # aspirational code - helper function
+    return findClosestValueHelper(tree, target, tree.value)
+
+# create helper function below
+def findClosestValueHelper(tree, target, closest):
