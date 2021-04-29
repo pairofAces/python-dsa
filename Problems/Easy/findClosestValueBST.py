@@ -56,6 +56,13 @@ def bstHelper(tree, target, closest):
 
 # Solution 2 - Optimized
 
+    # COMPLEXITY ANALYSIS
+        # Average  case Time: O(log(n)) time
+        # Average case Space: O(1) constant space
+
+        # Worst case Time: O(n) time
+        # Worst case Space: O(1) constant space
+
 def findClosestValueInBst(tree, target):
     # aspirational code - helper function
     return findClosestValueHelper(tree, target, tree.value)
