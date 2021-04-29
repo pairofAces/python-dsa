@@ -62,3 +62,19 @@ def findClosestValueInBst(tree, target):
 
 # create helper function below
 def findClosestValueHelper(tree, target, closest):
+    # create a variable to represent the tree
+    currentNode = tree
+
+    # while currentNode is not (None)
+    while currentNode is not None:
+        if abs(target - closest) > abs(target - currentNode.value):
+            closest = currentNode.value
+        if target < currentNode.value:
+            currentNode = currentNode.left
+        elif target > currentNode.value:
+            currentNode = currentNode.right
+        else:
+            break
+    
+    # after getting out of the while loop, return the closest value
+    return closest
