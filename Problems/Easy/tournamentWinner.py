@@ -20,3 +20,13 @@ def tournamentWinner(competition, results):
 
         # create a variable to represent the winning team
         winningTeam = homeTeam if result == HOME_TEAM_WON else awayTeam
+
+        # aspirational code, helper method to take care of updating scores
+            # 3 parameters:
+                # Team
+                # points
+                # scores
+        updateScores(winningTeam, 3, scores)
+
+    # create helper function below
+    def updateScores(team, points, scores):
