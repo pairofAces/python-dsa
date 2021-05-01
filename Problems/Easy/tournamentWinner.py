@@ -30,3 +30,11 @@ def tournamentWinner(competition, results):
 
     # create helper function below
     def updateScores(team, points, scores):
+        # if (team) isn't in (scores), then create a key:value pair
+        # of (team) in (scores) set to 0
+        if team not in scores:
+            scores[team] = 0
+        
+        # if there are (teams) in scores, then increment by (points)
+        scores[team] += points
+        
