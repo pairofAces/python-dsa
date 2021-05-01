@@ -28,13 +28,22 @@ def tournamentWinner(competition, results):
                 # scores
         updateScores(winningTeam, 3, scores)
 
-    # create helper function below
-    def updateScores(team, points, scores):
-        # if (team) isn't in (scores), then create a key:value pair
-        # of (team) in (scores) set to 0
-        if team not in scores:
-            scores[team] = 0
-        
-        # if there are (teams) in scores, then increment by (points)
-        scores[team] += points
-        
+        # if the scores for the winningTeam is greater than the currentBest
+        # then set the currentBest to the winningTeam
+
+        if scores[winningTeam] > scores[currentBest]:
+            currentBest = winningTeam
+    
+    # return the currentBest
+    return currentBest
+
+# create helper function below
+def updateScores(team, points, scores):
+    # if (team) isn't in (scores), then create a key:value pair
+    # of (team) in (scores) set to 0
+    if team not in scores:
+        scores[team] = 0
+    
+    # if there are (teams) in scores, then increment by (points)
+    scores[team] += points
+
