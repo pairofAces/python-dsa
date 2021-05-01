@@ -3,6 +3,9 @@
 # Prompt 
 
 # Solution
+    # Complexity
+        # Time: O(n) time, where (n) is the number of competitions
+        # Space: O(k) space, where (k) is the number of teams
 
 # function should take two parameters, competition and results
 def tournamentWinner(competition, results):
