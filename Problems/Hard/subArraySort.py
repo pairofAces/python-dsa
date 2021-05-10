@@ -22,6 +22,28 @@ class Solution:
 
             # use an if statement, aspirational code -> helper function
             if outOfOrder(i, num, array):
+                minNum = min(minNum, num)
+                maxNum = max(maxNum, num)
+        
+        # use an if statement to check if (minNum) will be equal to infinity
+        if minNum == float('inf'):
+            # then return an array of -1 and 1
+            return [-1, 1]
+        
+        # create a variable set to 0, acting as an index pointer
+        leftIdx = 0
+
+        # while the minNum is greater than or equal to the element at the
+        # index of (leftIdx)
+        while minNum >= array[leftIdx]:
+            # increment the leftIdx
+            leftIdx += 1
+        
+        # now create another variable to represent the index, starting from
+        # right-end of the array
+        rightIdx = len(array) - 1
+        
+
 
 # create helper function below
 def outOfOrder(i, num, array):
