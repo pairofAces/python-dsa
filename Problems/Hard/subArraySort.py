@@ -42,8 +42,33 @@ class Solution:
         # now create another variable to represent the index, starting from
         # right-end of the array
         rightIdx = len(array) - 1
-        
 
+        # using the rightIdx, while the maxNum is less than or equal to 
+        # the element at the position of (rightIdx)
+        while maxNum <= array[rightIdx]:
+            # decrement the rightIdx
+            rightIdx -= 1
+        
+        # finally return the left and right index
+        return [leftIdx, rightIdx]
 
 # create helper function below
 def outOfOrder(i, num, array):
+    # if (i) is equal to 0
+    if i == 0:
+        # return the boolean of: (num) greater than the element in the 
+        # array at the index of (i + 1)
+        return num > array[i + 1]
+    
+    # if (i) is equal to (len(array) - 1)
+    if i == len(array) - 1:
+        # return the boolean of: (num) less than the element at the
+        # position of (i - 1), within the input array
+        return num < array[i - 1]
+    
+    # after getting out of the previous if statements, return 
+    # the boolean of the following:
+        # (num) > (array[i + 1])
+        # OR
+        # (num) < (array[i - 1])
+        return num > array[i + 1] or num < array[i - 1]
