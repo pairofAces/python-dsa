@@ -11,6 +11,11 @@
 
 # Solution 1
 
+# Complexity Analysis
+    # Time:O(nd) time, where 
+
+    # Space:
+
 # create a function that takes in an integer, (n), and an array of integers, (array)
 class Solution:
     def numberOfWaysToMakeChange(n, denoms):
@@ -29,7 +34,7 @@ class Solution:
                 # now use an if statement to check if (denom)'s value is 
                 # less than or equal to the value of (amount)
                 if denom <= amount:
-                    
+
                     # if it is, then incrememnt the element at the index of (amount), in
                     # the (ways) array, by the element located at the index of 
                     # (amount - denom)
