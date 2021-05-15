@@ -32,5 +32,15 @@ class Solution:
             return True
 
         # if the value of the tree is less than the minimum, 
-        # or grater than the maximum
+        # or grater than or equal to the maximum
+        if tree.value < min or tree.value >= max:
+            # then it's false
+            return False
         
+        # create a variable to hold the boolean of recursive function call
+        leftIsValid = bstHelper(tree.left, min, tree.value)
+        
+        # return the value of the above variable and
+        # another recursive function call of the helper method,
+        # with the tree.right value, the tree's value, and the previous max
+        return leftIsValid and bstHelper(tree.right, tree.value, max)
