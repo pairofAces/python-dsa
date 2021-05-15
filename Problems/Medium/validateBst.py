@@ -15,7 +15,12 @@ class BST:
         self.value = value
         self.left = None
         self.right = None
-    
+
+# Complexity Analysis
+    # Time: O(n) time, where (n) represents how many nodes there are in the BST
+
+    # Space: O(d) space, where (d) is the depth of the BST
+
 class Solution:
     def validateBst(tree):
         # create a helper function that will take in more paramters
