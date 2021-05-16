@@ -7,6 +7,11 @@
 # The functions should traverse the the BST using the in-order, 
 # pre-order, and post-order tree-traversal techniques, respectively.
 
+# Complexity Analysis
+    # Time: O(n) time, where (n) is the number of nodes in the input tree
+
+    # Space: O(d) space, where (d) represents the depth of the input tree
+
 class Solution:
     def inOrderTraverse(tree, array):
         # if the tree input isn't (None)
