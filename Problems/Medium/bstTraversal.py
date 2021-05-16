@@ -22,7 +22,18 @@ class Solution:
         # return the array
         return array
 
+    # the following class methods, will be using similar logic as above
     def preOrderTraverse(tree, array):
-
+        # if the tree isn't (None)
+            # append the value of the current node
+            # call the method using the left child node as the first input, and array
+            # call the method using the right child node as the first input, and array
+            array.append(tree.value)
+            preOrderTraverse(tree.left, array)
+            preOrderTraverse(tree.right, array)
+        
+        # now return the array with its values
+        return array
 
     def postOrderTraversal(tree, array):
+        # 
