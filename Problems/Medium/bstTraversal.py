@@ -40,4 +40,10 @@ class Solution:
             # call the method with the left child node as the first input, and the array
             # then call the method with the right child node as the first input, and the array
             # then append the value of the current node, to the input array
+        if tree is not None:
+            postOrderTraversal(tree.left, array)
+            postOrderTraversal(tree.right, array)
+            array.append(tree.value)
         
+        # return the array
+        return array
