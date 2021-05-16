@@ -36,4 +36,8 @@ class Solution:
         return array
 
     def postOrderTraversal(tree, array):
-        # 
+        # if the tree isn't (None)
+            # call the method with the left child node as the first input, and the array
+            # then call the method with the right child node as the first input, and the array
+            # then append the value of the current node, to the input array
+        
