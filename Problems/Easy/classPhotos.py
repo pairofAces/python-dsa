@@ -24,3 +24,14 @@
 # the guidelines can be taken.
 
 
+def classPhotos(redShirts, blueshirts):
+    # sort both input arrays
+    redShirts.sort(reverse=True)
+    blueshirts.sort(reverse=True)
+
+    # create a variable that will represent the first row's color
+        # if/else logic
+    if redShirts[0] < blueshirts[0]:
+        shirtColorInFirstRow = "RED"
+    else:
+        shirtColorInFirstRow = "BLUE"
