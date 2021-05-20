@@ -50,3 +50,9 @@ def classPhotos(redShirts, blueshirts):
             if redShirtHeight >= blueShirtHeight:
                 return False
         else:
+            # if (blueShirtHeight) is greater than or equal to (redShirtHeight)
+            if blueShirtHeight >= redShirtHeight:
+                retun False
+    
+    # after coming out of the previous loops, return True
+    return True
