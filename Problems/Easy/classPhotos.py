@@ -42,3 +42,11 @@ def classPhotos(redShirts, blueshirts):
         redShirtHeight = redShirts[i]
         # set a variable for the blueShirts as well
         blueShirtHeight = blueShirts[i]
+
+        # if/else to make sure the (shirtColorInFirstRow) is equal to "RED" 
+        if shirtColorInFirstRow == "RED":
+            # now a nested if statement to make sure (redShirtHeight) is greater
+            # than or equal to (blueShirtHeight)
+            if redShirtHeight >= blueShirtHeight:
+                return False
+        else:
