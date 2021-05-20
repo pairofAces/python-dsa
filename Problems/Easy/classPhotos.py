@@ -35,3 +35,7 @@ def classPhotos(redShirts, blueshirts):
         shirtColorInFirstRow = "RED"
     else:
         shirtColorInFirstRow = "BLUE"
+    
+    # use a for loop to traverse through the redShirts array
+    for i in range(len(redShirts)):
+        
