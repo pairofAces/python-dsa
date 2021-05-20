@@ -38,4 +38,7 @@ def classPhotos(redShirts, blueshirts):
     
     # use a for loop to traverse through the redShirts array
     for i in range(len(redShirts)):
-        
+        # set a variable to the element at the (i) position
+        redShirtHeight = redShirts[i]
+        # set a variable for the blueShirts as well
+        blueShirtHeight = blueShirts[i]
