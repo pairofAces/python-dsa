@@ -9,5 +9,9 @@
 # A subarray must only contain numbers that are adjacent to each other
 # in the input array
 
-def kadanesAlgorithm(array):
-    
+class Solution:
+    def kadanesAlgorithm(array):
+        # create two variables to represent the current max and 
+        # the ending location of the max
+        maxEnding = array[0]
+        currentMax = array[0]
