@@ -24,3 +24,6 @@ class Solution:
             # update the initial two variables
             maxEnding = max(num, maxEnding + num)
             currentMax = max(currentMax, maxEnding)
+        
+        # after getting out of the loop, return the currentMax
+        return currentMax
