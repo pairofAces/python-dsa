@@ -9,6 +9,12 @@
 # A subarray must only contain numbers that are adjacent to each other
 # in the input array
 
+# SOLUTION
+# Complexity Analysis
+    # Time: O(n) time, where (n) is the length of the input array
+
+    # Space: O(1) space
+
 class Solution:
     def kadanesAlgorithm(array):
         # create two variables to represent the current max and 
