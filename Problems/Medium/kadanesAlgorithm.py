@@ -15,3 +15,12 @@ class Solution:
         # the ending location of the max
         maxEnding = array[0]
         currentMax = array[0]
+
+        # initiate a for loop
+        for i in range(1, len(array)):
+            # create a variable to represent the (i)th element in the array
+            num = array[i]
+
+            # update the initial two variables
+            maxEnding = max(num, maxEnding + num)
+            currentMax = max(currentMax, maxEnding)
