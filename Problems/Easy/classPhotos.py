@@ -23,6 +23,10 @@
 # Create a function that returns whether or not a class photo that follows
 # the guidelines can be taken.
 
+# Complexity Analysis
+    # Time: O(n log(n)) time, where (n) is the number of students
+
+    # Space: O(1) space 
 
 def classPhotos(redShirts, blueshirts):
     # sort both input arrays
