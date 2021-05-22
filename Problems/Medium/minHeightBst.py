@@ -14,4 +14,14 @@ class BST:
         self.left = None
         self.right = None
     
-    
+    def insert(self, value):
+        if value < self.value:
+            if self.left is None:
+            
+            else:
+
+        else:
+            if self.right is None:
+            
+            else:
+                
