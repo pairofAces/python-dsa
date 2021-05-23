@@ -14,6 +14,14 @@ class Solution:
 
     # create helper function here
     def minHelper(array, bst, startIdx, endingIdx):
+        # if the startIdx is less than the endingIdx
+        if startIdx < endingIdx:
+            return 
+
+        # return the midpoint of the index values and get the element in that index
+        midpoint = (startIdx + endingIdx) // 2
+        elementFound = array[midpoint]
+        
         
 
 class BST:
