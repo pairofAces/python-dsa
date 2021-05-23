@@ -21,7 +21,16 @@ class Solution:
         # return the midpoint of the index values and get the element in that index
         midpoint = (startIdx + endingIdx) // 2
         elementFound = array[midpoint]
+
+        # if the BST is none, create a BST with the value of the elementFound
+        if bst is None:
+            bst = BST(elementFound)
         
+        # else, if there is a value for the BST, insert the elementFound variable
+        # as a new node on the BST
+        else:
+            bst.insert(elementFound)
+            
         
 
 class BST:
