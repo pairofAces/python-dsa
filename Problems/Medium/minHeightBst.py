@@ -7,6 +7,10 @@
 
 class Solution:
     def minHeightBst(array):
+        # implement a helper function
+            # following paramerers:
+                #  array, None, 0, and the length of th array
+        minHelper(array, None, 0, len(array) - 1)
 
 class BST:
     def__init__(self, value):
