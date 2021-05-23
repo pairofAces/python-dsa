@@ -9,8 +9,12 @@ class Solution:
     def minHeightBst(array):
         # implement a helper function
             # following paramerers:
-                #  array, None, 0, and the length of th array
+                #  array, BST, starting Index, and the ending index
         minHelper(array, None, 0, len(array) - 1)
+
+    # create helper function here
+    def minHelper(array, bst, startIdx, endingIdx):
+        
 
 class BST:
     def__init__(self, value):
