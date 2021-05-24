@@ -5,6 +5,12 @@
 
 # The function should minimize the height of the BST.
 
+
+# Complexity Analysis:
+    # Time: O(n log(n)) time, where(n) is the length of the array
+
+    # Space: O(n) space, where(n) is the length of the final bst
+
 class Solution:
     def minHeightBst(array):
         # implement a helper function
