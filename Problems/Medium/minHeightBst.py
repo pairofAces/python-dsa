@@ -38,6 +38,9 @@ class Solution:
             # two -> mid point + 1, ending index
         minHelper(array, bst, startIdx, midpoint - 1)
         minHelper(array, bst, midpoint + 1, endingIdx)
+
+        # return the final bst
+        return bst
             
         
 
