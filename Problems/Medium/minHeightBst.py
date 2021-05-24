@@ -30,6 +30,14 @@ class Solution:
         # as a new node on the BST
         else:
             bst.insert(elementFound)
+        
+        # use recursion to implement the helper method,
+        # with the array, bst, and then using the following
+        # as the final 2/4 parameters
+            # one -> starting index, mid point - 1
+            # two -> mid point + 1, ending index
+        minHelper(array, bst, startIdx, midpoint - 1)
+        minHelper
             
         
 
