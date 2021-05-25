@@ -26,4 +26,11 @@ class Solution:
         for i in range(1, len(array) - 1):
             # a nested for loop
             for j in range(i + 1, len(array)):
+                # create two variables
+                    # one for the current sum, which would be the current element
+                    # (i) in the array, plus the element (j) in the array
+                current = array[i] + array[j]
                 
+                    # another for the difference between the targetSum and current
+                difference = targetSum - current
+                 
