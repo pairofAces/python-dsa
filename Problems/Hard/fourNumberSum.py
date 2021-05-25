@@ -33,4 +33,11 @@ class Solution:
                 
                     # another for the difference between the targetSum and current
                 difference = targetSum - current
-                 
+                
+                # use an id statement to check if the (difference) variable's value
+                # is contained in (allSums) dictionary
+                if difference in allSums:
+
+                    # use a for loop, to traverse through each sum combination in
+                    # the (allSums) dictionary, at the index of (difference)
+                    for sum in allSums[difference]:
