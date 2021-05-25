@@ -21,4 +21,9 @@ class Solution:
         # create an array variable to represent the final array
         # containing all the quadruplets
         quadruplets = []
-        
+
+        # initiate a for loop
+        for i in range(1, len(array) - 1):
+            # a nested for loop
+            for j in range(i + 1, len(array)):
+                
