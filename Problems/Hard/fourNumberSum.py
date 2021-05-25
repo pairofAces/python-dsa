@@ -15,3 +15,10 @@
 class Solution:
 
     def fourNumberSum(array, targetSum):
+        # create a dictionary for all the combinations of sums
+        allSums = {}
+
+        # create an array variable to represent the final array
+        # containing all the quadruplets
+        quadruplets = []
+        
