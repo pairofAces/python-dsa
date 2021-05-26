@@ -48,4 +48,10 @@ class Solution:
             
             # initiate a second for loop
             for k in range(o ,i):
-                
+                # create a variable to represent the current sum
+                current = array[i] + array[k]
+
+                # use an if statement, to check if the (current) sum is not contained in
+                # (allSums)
+                if current not in allSums:
+                    
