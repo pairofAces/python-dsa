@@ -41,3 +41,11 @@ class Solution:
                     # use a for loop, to traverse through each sum combination in
                     # the (allSums) dictionary, at the index of (difference)
                     for sum in allSums[difference]:
+                        # append the (sum) and an array of the (i)th element and (j)th
+                        # element in the input array
+                            # this will create a 2-dimensional array
+                        quadruplets.append(sum + [array[i], array[j]])
+            
+            # initiate a second for loop
+            for k in range(o ,i):
+                
