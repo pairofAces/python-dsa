@@ -12,6 +12,12 @@
 
 # If there aren't any quadruplets, the function should return an empty array. 
 
+
+# COMPLEXITY ANALYSIS
+    # TIME: O(n ^ 3) time, where (n) is the length of the input array
+
+    # SPACE: O(n ^ 2) space, where (n) is the length of the array that was created, and since
+    # it's supposed to be a 2-dimensional array -> (n ^ 2)
 class Solution:
 
     def fourNumberSum(array, targetSum):
