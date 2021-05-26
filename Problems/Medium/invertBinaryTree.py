@@ -15,7 +15,17 @@ class Solution:
         while len(queue):
             # create a variable to represent the first element in the (queue)
             current = queue.pop(0)
+        
+        # use an if statement, just in case (current) might be None
+        if current is None:
+            # then simply continue
+            continue
+        
+        # aspirational code, to handle swapping the child nodes
+        swapHelper(current)
 
+    def swapHelper(tree):
+        tree.left, tree.right = tree.right, tree.left
 
 
 # create the Binary Tree class
