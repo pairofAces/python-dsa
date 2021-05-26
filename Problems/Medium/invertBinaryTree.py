@@ -8,3 +8,12 @@
 
 class Solution:
     def invertBinaryTree(tree):
+
+
+
+# create the Binary Tree class
+class BinaryTree:
+    def__init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
