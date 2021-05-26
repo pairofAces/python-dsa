@@ -8,6 +8,13 @@
 
 class Solution:
     def invertBinaryTree(tree):
+        # create an array variable that will take in the (tree) input
+        queue = [tree]
+
+        # initiate a while loop, for the length of the (queue)
+        while len(queue):
+            # create a variable to represent the first element in the (queue)
+            current = queue.pop(0)
 
 
 
