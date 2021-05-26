@@ -54,4 +54,9 @@ class Solution:
                 # use an if statement, to check if the (current) sum is not contained in
                 # (allSums)
                 if current not in allSums:
-                    
+                    # if it's truly not in (allSums), add it in
+                    allSums[current] = [[array[k], array[i]]]
+                else:
+                    # if it is in (allSums) already, append the elements at (k) and
+                    # (i) to the key of (current)
+                    allSums[current].append([array[k], array[i]])
