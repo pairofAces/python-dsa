@@ -60,3 +60,6 @@ class Solution:
                     # if it is in (allSums) already, append the elements at (k) and
                     # (i) to the key of (current)
                     allSums[current].append([array[k], array[i]])
+        
+        # now return the final (quadruplets) array
+        return quadruplets
