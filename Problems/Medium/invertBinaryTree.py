@@ -24,6 +24,10 @@ class Solution:
         # aspirational code, to handle swapping the child nodes
         swapHelper(current)
 
+        # append the left and right child nodes to the (queue)
+        queue.append(current.left)
+        queue.append(current.right)
+
     def swapHelper(tree):
         tree.left, tree.right = tree.right, tree.left
 
