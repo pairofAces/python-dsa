@@ -43,4 +43,12 @@ class BinaryTree:
 
 # Solution 2 -> using recursion
 class Solution2:
+    def invertBinaryTree(tree):
+        # if there is no tree
+        if tree is None:
+            return
+        # use the same logic as the (swapHelper) function in (solution1)
+        swapHandler(tree)
     
+    # create a swapHandler function below
+    def swapHandler(tree):
