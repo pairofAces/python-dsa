@@ -49,6 +49,12 @@ class Solution2:
             return
         # use the same logic as the (swapHelper) function in (solution1)
         swapHandler(tree)
+
+        # use recursion, call the (invertBinaryTree) function on the left and
+        # right child of the (tree) input
+        invertBinaryTree(tree.left)
+        invertBinaryTree(tree.right)
     
     # create a swapHandler function below
     def swapHandler(tree):
+        tree.left, tree.right = tree.right, tree.left
