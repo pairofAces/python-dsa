@@ -42,6 +42,11 @@ class BinaryTree:
 
 
 # Solution 2 -> using recursion
+    # COMPLEXITY ANALYSIS:
+        # TIME: O(n) time, where (n) is the number of nodes
+
+        # SPACE: O(d) space, where (d) is the depth of the tree
+
 class Solution2:
     def invertBinaryTree(tree):
         # if there is no tree
