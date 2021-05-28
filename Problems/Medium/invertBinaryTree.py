@@ -6,6 +6,7 @@
     # the function should swap every left node in the tree for its
     # corresponding right node.
 
+# Solution 1
 class Solution:
     def invertBinaryTree(tree):
         # create an array variable that will take in the (tree) input
@@ -38,3 +39,8 @@ class BinaryTree:
         self.value = value
         self.left = None
         self.right = None
+
+
+# Solution 2 -> using recursion
+class Solution2:
+    
