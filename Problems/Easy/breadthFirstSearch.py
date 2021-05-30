@@ -35,4 +35,12 @@ class Node:
 
             # append current to the input array
             array.append(current.name)
+
+            # for each children of (current)
+            for child of current.children:
+                # append the (child) to the queue
+                queue.append(child)
+        
+        # once out of the while loop, return the array
+        return array
             
