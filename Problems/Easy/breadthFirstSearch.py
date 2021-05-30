@@ -23,3 +23,7 @@ class Node:
         return self
     
     def breadthFirstSearch(self, array):
+        # create a variable to represent a duplicate of (self)
+        # as an array
+        queue = [self]
+        
