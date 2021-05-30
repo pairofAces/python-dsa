@@ -26,4 +26,13 @@ class Node:
         # create a variable to represent a duplicate of (self)
         # as an array
         queue = [self]
-        
+
+        # while the length of the queue is greater than 0
+        while len(queue) > 0:
+
+            # create a variable to represent the first element in (queue)
+            current = queue.pop(0)
+
+            # append current to the input array
+            array.append(current.name)
+            
