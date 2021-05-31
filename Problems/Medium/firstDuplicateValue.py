@@ -23,4 +23,9 @@ class Solution:
             for j in range(i + 1, len(array)):
                 # create another variable to represent the (j)th element in the array
                 compare = array[j]
-                
+
+                # initate an if statement to compare (current) to (compare)
+                if current == compare:
+                    # if it is, then set (minimumIndex) to the minimum between 
+                    # it's current value and (j)
+                    minimumIndex = min(minimumIndex, j)
