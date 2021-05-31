@@ -11,3 +11,9 @@
 
 class Solution:
     def findDuplicateValue(array):
+        # create a variable to represent the index we'll use as a comparison
+        minimumIndex = len(array)
+
+        # initiate a for loop to traverse the input array
+        for i in range(len(array)):
+            
