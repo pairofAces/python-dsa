@@ -16,4 +16,11 @@ class Solution:
 
         # initiate a for loop to traverse the input array
         for i in range(len(array)):
-            
+            # create a variable to represent the (i)th element in the array
+            current = array[i]
+
+            # initiate another for loop to start at 1 position higher than (i)
+            for j in range(i + 1, len(array)):
+                # create another variable to represent the (j)th element in the array
+                compare = array[j]
+                
