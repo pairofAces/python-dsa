@@ -29,3 +29,12 @@ class Solution:
                     # if it is, then set (minimumIndex) to the minimum between 
                     # it's current value and (j)
                     minimumIndex = min(minimumIndex, j)
+        
+        # edge case
+            # if the minimumIndex is equal to the length of (array)
+        if minimumIndex == len(array):
+            return -1
+        
+        # after getting out of the previous loops,
+        # return the element in the array, at the index of (minimumIndex)
+        return array[minimumIndex]
