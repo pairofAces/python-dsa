@@ -13,6 +13,11 @@
 
 # Solution 
 
+    # Comlexity Analysis
+        # Time: O(v + e) time, where (v) is the number of vertices, and (e)
+        #       is the number of edges on the graph.
+
+        # Space: O(v) space
 class Node:
     def__init__(self, name):
         sef.children = []
@@ -43,4 +48,3 @@ class Node:
         
         # once out of the while loop, return the array
         return array
-            
