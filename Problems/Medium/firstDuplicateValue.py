@@ -57,4 +57,9 @@ class Solution2:
         for val in array:
             # if the element is in (checked)
             if val in checked:
-
+                # return the value
+                return val
+            
+            # if not, then add the element into the dictionary initially created
+            checked.add(val)
+        
