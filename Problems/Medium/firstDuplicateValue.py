@@ -63,3 +63,6 @@ class Solution2:
             # if not, then add the element into the dictionary initially created
             checked.add(val)
         
+        # if the duplicate isn't found (or if there weren't any)
+        # return a -1, as requested by the problem
+        return -1
