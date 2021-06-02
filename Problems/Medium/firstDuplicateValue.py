@@ -48,6 +48,11 @@ class Solution:
 
 # SOLUTION 2
 
+# Complexity Analysis
+    # Time: O(n) time, where (n) is the length of the input array
+
+    # Space: O(n) space, where (n) is the length of the set that was created
+    
 class Solution2:
     def firstDuplicate(array):
         # create a empty dictionary
