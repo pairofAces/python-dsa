@@ -9,6 +9,10 @@
     # if no integer is repeated, return a -1
     # the input array can be mutated
 
+# Complexity Analysis
+    # Time: O(n^2) time, where (n) is the length of the input array
+
+    # Space: O(1) space
 class Solution:
     def findDuplicateValue(array):
         # create a variable to represent the index we'll use as a comparison
