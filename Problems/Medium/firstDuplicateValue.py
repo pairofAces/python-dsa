@@ -50,4 +50,11 @@ class Solution:
 
 class Solution2:
     def firstDuplicate(array):
-        
+        # create a empty dictionary
+        checked = set()
+
+        # initiate a for loop to traverse the input array
+        for val in array:
+            # if the element is in (checked)
+            if val in checked:
+
