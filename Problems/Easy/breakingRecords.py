@@ -8,4 +8,10 @@
 # least points in a game. Points scored in the first game establish her 
 # record for the season, and she begins counting from there.
 
-def breakingRecords(scores):
+class Solution:
+    def breakingRecords(scores):
+        # initiate min and max comparison variables
+        minCount = maxCount = 0
+        minScore = maxScore = scores[0]
+
+        
