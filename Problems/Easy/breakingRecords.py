@@ -14,4 +14,11 @@ class Solution:
         minCount = maxCount = 0
         minScore = maxScore = scores[0]
 
-        
+        # iniate for loop to traverse through the input array
+        for i in range(1, len(array)):
+            if minScore < scores[i]:
+
+            elif maxScore > scores[i]:
+            
+        # return the min and maxCount's
+        return minCount,maxCount
