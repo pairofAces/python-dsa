@@ -71,3 +71,18 @@ class Solution2:
         # if the duplicate isn't found (or if there weren't any)
         # return a -1, as requested by the problem
         return -1
+
+# Solution 3
+
+class Solution3:
+    def firstDuplicate3(array):
+        # initiate for loop to traverse every element in the input array
+        for value in array:
+            # reference the absolute value of the current value
+            absoluteValue = abs(value)
+            
+            if array[absoluteValue - 1] < 0:
+                return absoluteValue
+            
+            array[absoluteValue - 1] *= -1
+        return -1
