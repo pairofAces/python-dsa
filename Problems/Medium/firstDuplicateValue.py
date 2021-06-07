@@ -87,6 +87,9 @@ class Solution3:
                 # then return the (absoluteValue) variable
                 return absoluteValue
             
-            # make the element at the index of 
+            # make the element at the index of (absoluteValue) minus 1,
+            # a negative by multipying with (-1)
             array[absoluteValue - 1] *= -1
+        
+        # if no duplicate was found, return a (-1)
         return -1
