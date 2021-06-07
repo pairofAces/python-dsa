@@ -72,7 +72,12 @@ class Solution2:
         # return a -1, as requested by the problem
         return -1
 
-# Solution 3
+# Solution 3 - Optimal
+
+# Complexity Analysis
+    # Time: O(n) time, where (n) is the length of the input array
+
+    # Space: O(1) space, since there is no use of any external data structures
 
 class Solution3:
     def firstDuplicate3(array):
