@@ -81,8 +81,12 @@ class Solution3:
             # reference the absolute value of the current value
             absoluteValue = abs(value)
             
+            # initiate if statement, if the element at the index of 
+            # the (absoluteValue) variable minus 1, is a negative
             if array[absoluteValue - 1] < 0:
+                # then return the (absoluteValue) variable
                 return absoluteValue
             
+            # make the element at the index of 
             array[absoluteValue - 1] *= -1
         return -1
