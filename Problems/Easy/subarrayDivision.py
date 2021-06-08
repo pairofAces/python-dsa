@@ -21,4 +21,20 @@ class Solution:
         # initiate while loop for as long as (i) is less than the
         # length of (s)
         while i < len(s):
+            # if the sum of (i) and (m) is less than or equal to
+            # the length of (s)
+            if i + m <= len(s):
+                # create a temporary variable that will act as the sum
+                # of the elements in the input array (s) between (i) and
+                # (i + m)
+                temp = sum(s[i : i + m])
+
+                # if (temp) is equal to the birthday, increment (total)
+                if temp == d:
+                    total += 1
             
+            # increment (i)
+            i += 1
+        
+        # finally return the number of ways Lily can divide the chocolate bar
+        return total
