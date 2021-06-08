@@ -14,4 +14,11 @@
 
 class Solution:
     def birthdays(s, d, m):
-        
+        # initate pointer and total variables
+        i = 0
+        total = 0
+
+        # initiate while loop for as long as (i) is less than the
+        # length of (s)
+        while i < len(s):
+            
