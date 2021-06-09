@@ -13,4 +13,10 @@ class Solution:
 
         # initiate for loop to traverse through the (nums) array
         for num in nums:
+            # edge cases where the next element is the same as the element
+            # before
+            if num == max or num == second_Max or num == third_Max:
+                # move on
+                continue
+
             
