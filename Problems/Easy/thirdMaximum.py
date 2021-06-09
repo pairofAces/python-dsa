@@ -4,6 +4,12 @@
 # input array. 
     # If the third maximum doesn't exist, return the maximum
 
+
+# Complexity Analysis
+    # Time: O(n) time, where (n) is the length of the input array
+
+    # Space: O(1) space, since no external data structures were used
+    
 class Solution:
     def thirdMax(self, nums: List[int]) -> int:
         # initiate comparison variables
