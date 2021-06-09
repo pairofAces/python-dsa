@@ -19,4 +19,12 @@ class Solution:
                 # move on
                 continue
 
+            # if/else statements
+            # if the max, second_Max, third_Max, are None or less than the
+            # current (num)
+            if max == None or num > max:
+                
+            elif second_Max == None or num > second_Max:
+            
+            elif third_Max == None or num > third_Max:
             
