@@ -6,4 +6,11 @@
 
 class Solution:
     def thirdMax(self, nums: List[int]) -> int:
-        
+        # initiate comparison variables
+        max = None
+        second_Max = None
+        third_Max = None
+
+        # initiate for loop to traverse through the (nums) array
+        for num in nums:
+            
