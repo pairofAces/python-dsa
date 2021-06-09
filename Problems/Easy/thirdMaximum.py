@@ -23,8 +23,13 @@ class Solution:
             # if the max, second_Max, third_Max, are None or less than the
             # current (num)
             if max == None or num > max:
-                
+                third_Max = second_Max
+                second_Max = max
+                max = num
             elif second_Max == None or num > second_Max:
-            
+                third_Max = second_Max
+                second_Max = num
             elif third_Max == None or num > third_Max:
+                third_Max = num
+            
             
