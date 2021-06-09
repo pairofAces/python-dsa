@@ -32,4 +32,10 @@ class Solution:
             elif third_Max == None or num > third_Max:
                 third_Max = num
             
-            
+        # edge case, when the third_Max is None at this point
+        if third_Max == None:
+            # then return the maximum
+            return max
+        
+        # once the loops end, return the third_max
+        return third_Max
