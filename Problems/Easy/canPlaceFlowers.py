@@ -15,4 +15,13 @@ class Solution:
         count = 0
         f = len(flowerbed)
 
-        
+        # for loop to traverse through the flowerbed input array
+        for i in range(f):
+            # if statements for edge cases
+            if i - 1 >= 0 and flowerbed[i -1] == 1:
+                continue
+            if flowerbed[i] == 1:
+                continue
+            if i + 1 < f and flowerbed[i + 1] == 1:
+                continue
+             
