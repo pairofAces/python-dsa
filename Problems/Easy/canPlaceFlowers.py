@@ -24,4 +24,15 @@ class Solution:
                 continue
             if i + 1 < f and flowerbed[i + 1] == 1:
                 continue
-             
+            
+            # after edge cases, if the current element is 0, and a flower
+            # can be planted, change the 0 to a 1
+            flowerbed[i] = 1
+
+            # then increment the count variable
+            count += 1
+        
+        # return the boolean of whether or not the value of (count)
+        # is greater than or equal to (n)
+        return count >= new
+        
