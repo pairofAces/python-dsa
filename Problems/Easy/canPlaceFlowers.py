@@ -11,4 +11,8 @@
 
 class Solution:
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
+        # initiate tracking variable and variable for the length of input array
+        count = 0
+        f = len(flowerbed)
+
         
