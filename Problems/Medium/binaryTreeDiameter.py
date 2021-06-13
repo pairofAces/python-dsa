@@ -18,4 +18,11 @@ class Solution:
 
     def getTreeInfo(tree):
         if tree is None:
-            
+            # create a class to handle the tree information
+            return TreeHelper(0, 0)
+
+class TreeHelper:
+    def__init__(self, diameter, height):
+        self.diameter = diameter
+        self.height = height
+        
