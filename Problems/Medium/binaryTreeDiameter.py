@@ -12,3 +12,10 @@ class BinaryTree:
     
 class Solution:
     def binaryTreeDiameter(tree):
+        # aspirational code
+            # helper method to return the diameter 
+        return getTreeInfo(tree).diameter
+
+    def getTreeInfo(tree):
+        if tree is None:
+            
