@@ -28,7 +28,18 @@ class Solution:
 
         # create a variable to represent the longest path
         longestPathFromRoot = leftTreeInfo.height + rightTreeInfo.height
-        
+
+        # create a variable to represent the max diameter
+        maxDiameter = max(leftTreeInfo.diameter, rightTreeInfo.diameter)
+
+        # make a reference to the current diameter
+        currentDiameter = max(longestPathFromRoot, maxDiameter)
+
+        # make a reference to the current height
+        currentHeight = 1 + max(leftTreeInfo.height, rightTreeInfo.height)
+
+        # return the TreeHelper class with the current diameter and height
+        return TreeHelper(currentDiameter, currentHeight)
 
 class TreeHelper:
     def__init__(self, diameter, height):
