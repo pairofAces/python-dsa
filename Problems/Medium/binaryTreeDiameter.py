@@ -20,6 +20,15 @@ class Solution:
         if tree is None:
             # create a class to handle the tree information
             return TreeHelper(0, 0)
+        
+        # create variables to represent the left and right tree info
+            # use recursion
+        leftTreeInfo = getTreeInfo(tree.left)
+        rightTreeInfo = getTreeInfo(tree.right)
+
+        # create a variable to represent the longest path
+        longestPathFromRoot = leftTreeInfo.height + rightTreeInfo.height
+        
 
 class TreeHelper:
     def__init__(self, diameter, height):
