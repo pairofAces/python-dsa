@@ -9,6 +9,11 @@ class BinaryTree:
         self.value = value
         self.left = left
         self.right = right
+
+# Complexity Analysis
+    # Time: O(n) time, where (n) is the number of nodes in the Binary Tree
+
+    # Space: O(h) space, where (h) is the height of the Binary Tree
     
 class Solution:
     def binaryTreeDiameter(tree):
