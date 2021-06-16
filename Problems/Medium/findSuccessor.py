@@ -17,4 +17,9 @@ class BinaryTree:
 
 class Solution:
     def findSuccessor(tree, node):
+        # aspirational code, create helper method to handle
+        # building an array of the nodes
+        inOrderTraverse = getInOrderTraversal(tree)
+    
+    def getInOrderTraversal(node, order = []):
         
