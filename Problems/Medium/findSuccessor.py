@@ -22,4 +22,15 @@ class Solution:
         inOrderTraverse = getInOrderTraversal(tree)
     
     def getInOrderTraversal(node, order = []):
+        # if the node is None
+        if node is None:
+            return order
         
+        # use recursion to apply the helper function to the left
+        # and right nodes
+        getInOrderTraversal(node.left, order)
+        order.append(node)
+        getInOrderTraversal(node.right, order)
+
+        # return the final (order) array
+        return order
