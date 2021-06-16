@@ -21,6 +21,7 @@ class Solution:
         # building an array of the nodes
         inOrderTraverse = getInOrderTraversal(tree)
     
+    # helper function below
     def getInOrderTraversal(node, order = []):
         # if the node is None
         if node is None:
