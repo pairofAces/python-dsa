@@ -33,7 +33,9 @@ class Solution:
             if i == len(inOrderTraverse):
                 return None
             
-            
+            # return the value of the inOderTraverse with the input of
+            # the index + 1
+            return inOderTraverse(i + 1)
     
     # helper function below
     def getInOrderTraversal(node, order = []):
