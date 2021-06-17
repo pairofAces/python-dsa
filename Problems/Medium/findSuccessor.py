@@ -15,6 +15,12 @@ class BinaryTree:
         self.right = right
         self.parent = parent
 
+
+# Complexity Analysis
+    # Time: O(n) time, where (n) is the number of nodes in the tree
+
+    # Space: O(n) space, where (n) is the number of elements created in
+    # array from the helper method
 class Solution:
     def findSuccessor(tree, node):
         # aspirational code, create helper method to handle
