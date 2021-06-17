@@ -20,6 +20,12 @@ class Solution:
         # aspirational code, create helper method to handle
         # building an array of the nodes
         inOrderTraverse = getInOrderTraversal(tree)
+
+        # traverse through the array created in the helper method
+        for i, currentNode in enumerate(inOrderTraverse):
+            # if the (currentNode) isn't equal to the input (node)
+            if currentNode != node:
+                
     
     # helper function below
     def getInOrderTraversal(node, order = []):
