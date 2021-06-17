@@ -25,7 +25,15 @@ class Solution:
         for i, currentNode in enumerate(inOrderTraverse):
             # if the (currentNode) isn't equal to the input (node)
             if currentNode != node:
-                
+                # then continue
+                continue
+            
+            # if the index is equal to the length of the array created in
+            # helper method
+            if i == len(inOrderTraverse):
+                return None
+            
+            
     
     # helper function below
     def getInOrderTraversal(node, order = []):
