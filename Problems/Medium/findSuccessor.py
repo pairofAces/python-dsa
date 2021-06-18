@@ -60,4 +60,15 @@ class Solution:
 
 class Solution2:
     def findSuccessor2(tree, node):
+        # if there is a right node
+        if node.right is not None:
+            # aspirational code
+                # helper method
+            return getLeftmostChildNode(node.right)
         
+        # aspirational code
+            # helper method
+        return getRightmostChildNode(node)
+    
+    # create helper methods below
+    
