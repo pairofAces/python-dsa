@@ -57,3 +57,7 @@ class Solution:
 
         # return the final (order) array
         return order
+
+class Solution2:
+    def findSuccessor2(tree, node):
+        
