@@ -81,3 +81,6 @@ class Solution2:
         return currentNode
 
     def getRightmostChildNode(node):
+        # create current variable
+        currentNode = node
+        
