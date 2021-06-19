@@ -72,7 +72,9 @@ class Solution2:
     
     # create helper methods below
     def getLeftmostChildNode(node):
+        # create variable to represent the current node
         currentNode = node
+
         # while there is a left child node
         while currentNode.left is not None:
             currentNode = currentNode.left
@@ -83,4 +85,12 @@ class Solution2:
     def getRightmostChildNode(node):
         # create current variable
         currentNode = node
+
+        # while there is a parent node and the parent's right node is equal
+        # to the (currentNode)
+        while currentNode.parent is not None and currentNode.parent.right == currentNode:
+            # set the (currentNode) to the parent
+            currentNode = currentNode.parent
         
+        # return the parent node
+        return currentNode.parent
