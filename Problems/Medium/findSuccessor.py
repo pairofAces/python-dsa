@@ -58,6 +58,13 @@ class Solution:
         # return the final (order) array
         return order
 
+
+# Complexity Analysis
+    # Time: O(h) time, where (h) is the height of the tree
+
+    # Space: O(1) constant space, since no external data structures are
+    # being used
+
 class Solution2:
     def findSuccessor2(tree, node):
         # if there is a right node
