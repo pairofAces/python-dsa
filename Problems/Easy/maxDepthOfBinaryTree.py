@@ -7,4 +7,7 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+
+class Solution:
+    def maxDepth(self, root: TreeNode) -> int:
         
