@@ -10,4 +10,10 @@ class TreeNode:
 
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
+        # if the root is empty
+        if not root:
+            # return a 0
+            return 0
+        
+        # if the root is not empty
         
