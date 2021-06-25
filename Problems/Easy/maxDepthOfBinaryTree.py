@@ -17,4 +17,4 @@ class Solution:
         
         # if the root is not empty
             # recursive call on both children nodes
-        return (1 + max(self.maxDepth(self.left), self.maxDepth(self.right)))
+        return (1 + max(self.maxDepth(root.left), self.maxDepth(root.right)))
