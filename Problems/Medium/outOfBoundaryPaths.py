@@ -26,4 +26,13 @@ class Solution:
             
             # create a variable to represent the number of moves
             moves = 0
-            
+
+            # initate for loop to traverse through potential grid coordinates
+            for x,y in [(1,0), (-1, 0), (0,1), (0, -1)]:
+                # invoke recursion of the function (rec) to be incremented into
+                # (moves)
+                moves += rec(r+x, c+y, M-1)
+            memo[(r, c, M)] = moves
+
+            # return the value of (moves)
+            return moves
