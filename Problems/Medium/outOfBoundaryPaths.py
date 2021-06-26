@@ -14,6 +14,11 @@ class Solution:
     def findPaths(self, m: int, n: int, maxMove: int, startRow: int, startColumn: int) -> int:
         # create a memo variable as a dictionary
         memo = {}
-        
+
         # create recursive function to be invoked
         def rec(r, c, M):
+            if (r, c, M) in memo: 
+                return memo[(r, c, M)]
+            if r<0 or c<0 or r>=m or c>=n:
+                return 1
+            
