@@ -21,4 +21,9 @@ class Solution:
                 return memo[(r, c, M)]
             if r<0 or c<0 or r>=m or c>=n:
                 return 1
+            if M == 0:
+                return 0
+            
+            # create a variable to represent the number of moves
+            moves = 0
             
