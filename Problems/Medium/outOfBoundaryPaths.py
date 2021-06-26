@@ -36,3 +36,6 @@ class Solution:
 
             # return the value of (moves)
             return moves
+        
+        # return the recursive function
+        return rec(startRow, startColumn, maxMove)
