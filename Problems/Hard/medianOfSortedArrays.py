@@ -16,4 +16,7 @@ class Solution:
         total = len(nums1) + len(nums2)
         half = total // 2
 
-        
+        # initate if statement 
+        if len(B) < len(A):
+            # switch the variables values
+            A, B = B, A
