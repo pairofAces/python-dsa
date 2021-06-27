@@ -9,4 +9,11 @@
 
 class Solution:
     def findMedianSortedArray(self, nums1: List[int], nums2: List[int]) -> float:
+        # initate variables to hold the input arrays2
+        A, B = nums1, nums2 
+
+        # create variables to hold total and half integers
+        total = len(nums1) + len(nums2)
+        half = total // 2
+
         
