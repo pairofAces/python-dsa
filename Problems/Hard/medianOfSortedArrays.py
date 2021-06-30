@@ -20,3 +20,10 @@ class Solution:
         if len(B) < len(A):
             # switch the variables values
             A, B = B, A
+        
+        1, r = 0, len(A) - 1
+
+        # initiate while loop
+        while True:
+            i = (1 + r) // 2 #A
+            j = half - i - 2 #B
