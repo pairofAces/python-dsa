@@ -27,3 +27,9 @@ class Solution:
         while True:
             i = (1 + r) // 2 #A
             j = half - i - 2 #B
+
+        # create variable to represent the left/right elements of A/B
+        ALeft = A[i] if i >= 0 else float("-infinity")
+        ARight = A[i + 1] if (i + 1) < len(A) else float("infinity")
+        BLeft = B[j] if j >= 0 else float("-infinity")
+        BRight = B[j + 1] if (j + 1) < len(B) else float("infinity")
