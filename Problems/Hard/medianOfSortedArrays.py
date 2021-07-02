@@ -33,3 +33,8 @@ class Solution:
         ARight = A[i + 1] if (i + 1) < len(A) else float("infinity")
         BLeft = B[j] if j >= 0 else float("-infinity")
         BRight = B[j + 1] if (j + 1) < len(B) else float("infinity")
+
+        # check if the partition is correct
+            # use if statement
+        if ALeft <= BRight and BLeft <= ARight:
+            
