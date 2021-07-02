@@ -43,4 +43,10 @@ class Solution:
                 return min(ARight, BRight)
             
             # even
-            
+            # return the addition of max of (ALeft, BLeft) 
+            # and the min(ARight, BRight) / 2
+            return (max(ALeft, BLeft) + min(ARight, BRight)) / 2
+        
+        elif ARight > BRight:
+
+        else: 
