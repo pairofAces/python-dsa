@@ -21,7 +21,7 @@ class Solution:
             # switch the variables values
             A, B = B, A
         
-        1, r = 0, len(A) - 1
+        l, r = 0, len(A) - 1
 
         # initiate while loop
         while True:
@@ -48,5 +48,6 @@ class Solution:
             return (max(ALeft, BLeft) + min(ARight, BRight)) / 2
         
         elif ARight > BRight:
-
+            r = i - 1
         else: 
+            l = i + 1
