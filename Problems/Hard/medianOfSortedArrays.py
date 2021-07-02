@@ -37,4 +37,10 @@ class Solution:
         # check if the partition is correct
             # use if statement
         if ALeft <= BRight and BLeft <= ARight:
+            # add
+            if total % 2:
+                # return the minimum of either ARight or BRight
+                return min(ARight, BRight)
+            
+            # even
             
