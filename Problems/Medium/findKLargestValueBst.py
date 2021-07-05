@@ -11,3 +11,6 @@ class BST:
     
 class Solution:
     def findKthLargestValueInBst(tree, k):
+        # create variable to represent array
+        sortedNodeValues = []
+        
