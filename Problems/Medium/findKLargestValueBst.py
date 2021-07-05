@@ -13,4 +13,6 @@ class Solution:
     def findKthLargestValueInBst(tree, k):
         # create variable to represent array
         sortedNodeValues = []
-        
+
+        # aspirational code, helper method
+        inOrderTraverse(tree, sortedNodeValues)
