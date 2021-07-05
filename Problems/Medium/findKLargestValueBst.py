@@ -16,3 +16,10 @@ class Solution:
 
         # aspirational code, helper method
         inOrderTraverse(tree, sortedNodeValues)
+
+        # return the element in the (sortedNodeValues) array, at the index
+        # of the length of the array minus (k)
+        return sortedNodeValues[len(sortedNodeValues) - k]
+    
+    def inOrderTraverse(node, sortedNodeValues):
+        
