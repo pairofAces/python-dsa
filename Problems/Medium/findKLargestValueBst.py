@@ -22,4 +22,7 @@ class Solution:
         return sortedNodeValues[len(sortedNodeValues) - k]
     
     def inOrderTraverse(node, sortedNodeValues):
+        # if the node has no value, return a blank value
+        if node is None:
+            return 
         
