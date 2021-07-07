@@ -26,3 +26,7 @@ class Solution:
         if node is None:
             return 
         
+        # use recursion to invoke the helper method to the left child
+            # then append that nodes value into the (sortedNodeValues) array
+            # then move on the invoke the helper method to the right chil
+        inOrderTraverse(node.left, sortedNodeValues)
