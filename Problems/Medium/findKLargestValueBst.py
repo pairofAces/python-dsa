@@ -30,3 +30,9 @@ class Solution:
             # then append that nodes value into the (sortedNodeValues) array
             # then move on the invoke the helper method to the right chil
         inOrderTraverse(node.left, sortedNodeValues)
+
+        # append the node value to the (sortedNodeValues) array
+        sortedNodeValues.append(node.value)
+
+        # use recursive call to invoke inOrderTraverse to the right child node
+        inOrderTraverse(node.right, sortedNodeValues)
