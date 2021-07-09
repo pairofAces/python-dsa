@@ -41,3 +41,10 @@ class Solution:
 
         # use recursive call to invoke inOrderTraverse to the right child node
         inOrderTraverse(node.right, sortedNodeValues)
+
+class Solution2:
+    # create another class to describe the tree's information below
+
+# create class for solution2 here
+class TreeInfo:
+    
