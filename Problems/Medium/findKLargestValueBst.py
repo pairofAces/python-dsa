@@ -9,6 +9,11 @@ class BST:
         self.left = left
         self.right = right
     
+# Complexity Analysis
+    # Time: O(n) time, where (n) is the number of nodes in the BST
+
+    # Space: O(n) space, where (n) is the length of the data structure that was used,
+    # in this case, the array (sortedNodeValues)
 class Solution:
     def findKthLargestValueInBst(tree, k):
         # create variable to represent array
