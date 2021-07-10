@@ -47,6 +47,13 @@ class Solution2:
     
     # create the function to find (k)th largest value in BST
     def findKthLargestValueInBst2(tree, k):
+        # create variable to hold the value of (TreeInfo)
+        treeInfo = TreeInfo(0, -1)
+
+        # aspirational code, helper method
+            # 3 parameters:
+                # BST, k, and the treeInfo variable
+        reverseInOrderTraverse(tree, k, treeInfo)
         
 
 # create class for solution2 here
