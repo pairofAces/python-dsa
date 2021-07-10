@@ -44,6 +44,10 @@ class Solution:
 
 class Solution2:
     # create another class to describe the tree's information below
+    
+    # create the function to find (k)th largest value in BST
+    def findKthLargestValueInBst2(tree, k):
+        
 
 # create class for solution2 here
 class TreeInfo:
