@@ -55,8 +55,12 @@ class Solution2:
                 # BST, k, and the treeInfo variable
         reverseInOrderTraverse(tree, k, treeInfo)
         
-        # return the value of the 
-        return
+        # return the value of the latest visited node value
+        return treeInfo.latestVisitedNodeValue
+
+    # create helper method -> reverseInOrderTraverse
+    def reverseInOrderTraverse(node, k, treeInfo):
+        
 
 # create class for solution2 here
 class TreeInfo:
