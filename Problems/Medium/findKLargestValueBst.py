@@ -60,6 +60,11 @@ class Solution2:
 
     # create helper method -> reverseInOrderTraverse
     def reverseInOrderTraverse(node, k, treeInfo):
+        # if the node doesn't have a value, or the amount of
+        # nodes visited is greater than or equal to k
+            # return blank statement
+        if node is None or treeInfo.numberOfNodesVisited >= k:
+            return
         
 
 # create class for solution2 here
