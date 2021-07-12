@@ -77,7 +77,9 @@ class Solution2:
 
             # set the value of the latest node visited to the current node's value
             treeInfo.latestVisitedNodeValue = node.value
-            
+
+            # use recursion to invoke the function to the left child
+            reverseInOrderTraverse(node.left, k, treeInfo)
 
 # create class for solution2 here
 class TreeInfo:
