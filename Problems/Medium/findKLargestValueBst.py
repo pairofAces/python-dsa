@@ -71,7 +71,11 @@ class Solution2:
 
         # initiate if statement to check if the number of nodes visited is
         # less than (k)
-        
+        if treeInfo.numberOfNodesVisited < k:
+            # increment the value of the number of nodes visited
+            treeInfo.numberOfNodesVisited += 1
+
+            # 
 
 # create class for solution2 here
 class TreeInfo:
