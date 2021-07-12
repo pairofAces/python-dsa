@@ -66,6 +66,12 @@ class Solution2:
         if node is None or treeInfo.numberOfNodesVisited >= k:
             return
         
+        # use recursion to invoke the function to the right child
+        reverseInOrderTraverse(node.right, k, treeInfo)
+
+        # initiate if statement to check if the number of nodes visited is
+        # less than (k)
+        
 
 # create class for solution2 here
 class TreeInfo:
