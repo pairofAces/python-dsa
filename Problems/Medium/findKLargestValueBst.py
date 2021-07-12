@@ -75,7 +75,9 @@ class Solution2:
             # increment the value of the number of nodes visited
             treeInfo.numberOfNodesVisited += 1
 
-            # 
+            # set the value of the latest node visited to the current node's value
+            treeInfo.latestVisitedNodeValue = node.value
+            
 
 # create class for solution2 here
 class TreeInfo:
