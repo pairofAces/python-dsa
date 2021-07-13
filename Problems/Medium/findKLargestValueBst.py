@@ -42,6 +42,11 @@ class Solution:
         # use recursive call to invoke inOrderTraverse to the right child node
         inOrderTraverse(node.right, sortedNodeValues)
 
+# Complexity Analysis
+    # Time: O(h + k) time, where (h) is the height of the tree and (k) is
+    # the input parameter
+
+    # Space: O(h) space
 class Solution2:
     # create another class to describe the tree's information below
     
