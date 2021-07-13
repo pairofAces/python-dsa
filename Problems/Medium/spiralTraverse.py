@@ -11,3 +11,11 @@
 
 class Solution:
     def spiralTraverse(array):
+        # create results array
+        result = []
+
+        # initiate variables to represent the starting and ending rows
+        startRow, endRow = 0, len(array) - 1
+
+        # initiate variables to represent the starting and ending columns
+        startCol, endCol = 0, len(array[0] - 1)
