@@ -19,3 +19,10 @@ class Solution:
 
         # initiate variables to represent the starting and ending columns
         startCol, endCol = 0, len(array[0] - 1)
+
+        # start conditional statement
+            # while he starting row is less than or equal to ending row
+            # AND the starting column is less than or equal to ending column
+                # proceed to inner conditionals
+        while startRow <= endRow and startCol <= endCol:
+             
