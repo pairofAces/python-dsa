@@ -25,4 +25,15 @@ class Solution:
             # AND the starting column is less than or equal to ending column
                 # proceed to inner conditionals
         while startRow <= endRow and startCol <= endCol:
-             
+            #  use for loops for inner logic
+                # 4 cases
+            for col in range(startCol, endCol + 1):
+                # result
+            
+            for row in range(startRow, endRow + 1):
+                # result
+            
+            for col in reversed(range(startCol, endCol)):
+                # result
+            
+            for row in reversed(range(startRow + 1, endRow)):
