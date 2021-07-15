@@ -28,7 +28,10 @@ class Solution:
             #  use for loops for inner logic
                 # 4 cases
             for col in range(startCol, endCol + 1):
-                # result
+                # append the element at the starting row and column
+                # to the result array -> startingRow -> and initial
+                # column value
+                result.append(array[startRow][col])
             
             for row in range(startRow, endRow + 1):
                 # result
