@@ -34,7 +34,9 @@ class Solution:
                 result.append(array[startRow][col])
             
             for row in range(startRow, endRow + 1):
-                # result
+                # append the element at the initial row value and the
+                # ending colum -> row -> ending column value
+                result.append(array[row][endCol])
             
             for col in reversed(range(startCol, endCol)):
                 # result
