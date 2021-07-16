@@ -39,6 +39,15 @@ class Solution:
                 result.append(array[row][endCol])
             
             for col in reversed(range(startCol, endCol)):
-                # result
+                # edge case
+                    # when there is only a single row in the matrix
+                    # we don't want to double count the values since
+                    # we've already counted it during the initial
+                    # for loop above
+                
+                # if the starting row is equal to the ending row
+                if startRow == endRow:
+                    break
+                
             
             for row in reversed(range(startRow + 1, endRow)):
