@@ -49,5 +49,7 @@ class Solution:
                 if startRow == endRow:
                     break
                 
+                # if the starting row and ending row are not equal
+                result.append(array[endRow][col])
             
             for row in reversed(range(startRow + 1, endRow)):
