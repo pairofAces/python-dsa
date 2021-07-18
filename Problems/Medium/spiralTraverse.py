@@ -73,3 +73,5 @@ class Solution:
             startCol += 1
             endCol -= 1
         
+        # return the results array
+        return result
