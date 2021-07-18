@@ -65,3 +65,11 @@ class Solution:
                 
                 # if they aren't equal
                 result.append(array[row][startCol])
+            
+            # increment the start rows and columns
+            # decrement the end rows and columns
+            startRow += 1
+            endRow -= 1
+            startCol += 1
+            endCol -= 1
+        
