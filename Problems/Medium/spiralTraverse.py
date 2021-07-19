@@ -80,3 +80,7 @@ class Solution:
         
         # return the results array
         return result
+
+class Solution2:
+    def spiralTraversal(array):
+        
