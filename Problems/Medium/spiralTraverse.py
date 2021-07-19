@@ -83,4 +83,14 @@ class Solution:
 
 class Solution2:
     def spiralTraversal(array):
-        
+        # create results array
+        results = []
+
+        # using a helper function
+        spiralFill(array, 0, len(array) - 1, 0, len(array[0]) - 1, results)
+
+        # return the results array
+        return results
+    
+    # create helper function
+    def spiralFill(array, rowStart, rowEnd, colStart, colEnd, result):
