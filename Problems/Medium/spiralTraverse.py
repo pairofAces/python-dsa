@@ -9,6 +9,11 @@
     # then goes to the right, and proceeds in a spiral pattern until all the
     # elements have been visited.
 
+# Complexity Analysis
+    # Time: O(n) time, where (n) is the number of elements in the input array
+
+    # Space: O(n) space, where (n) is the number of elements in the array that
+    # was created within the spiralTraverse function -> (result)
 class Solution:
     def spiralTraverse(array):
         # create results array
