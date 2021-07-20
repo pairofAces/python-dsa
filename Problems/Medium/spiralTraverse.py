@@ -96,7 +96,19 @@ class Solution2:
     def spiralFill(array, rowStart, rowEnd, colStart, colEnd, result):
         # if the starting row or column is larger than it's respected
         # ending row/column
-        if rowStart > rowEnd or colStart > endCol:
+        if rowStart > rowEnd or colStart > colEnd:
             # return a blank statement
             return
         
+        # initiate for loops
+        for col in range(colStart, colEnd + 1):
+            # result
+        
+        for row in range(rowStart + 1, rowEnd + 1):
+            # result
+        
+        for col in reversed(range(colStart, colEnd)):
+            # result
+        
+        for row in reversed(range(rowStart + 1, rowEnd)):
+            # result
