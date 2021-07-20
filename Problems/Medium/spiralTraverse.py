@@ -94,3 +94,9 @@ class Solution2:
     
     # create helper function
     def spiralFill(array, rowStart, rowEnd, colStart, colEnd, result):
+        # if the starting row or column is larger than it's respected
+        # ending row/column
+        if rowStart > rowEnd or colStart > endCol:
+            # return a blank statement
+            return
+        
