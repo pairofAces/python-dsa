@@ -103,10 +103,15 @@ class Solution2:
         # initiate for loops
         for col in range(colStart, colEnd + 1):
             # result
+                # append the element at the index of (starting row) -> column
+                # to the result array that was initially created
             result.append(array[rowStart][col])
         
         for row in range(rowStart + 1, rowEnd + 1):
             # result
+                # append the element at the index of row -> ending column
+                # to the result array that was initially created
+            result.append(array[row][colEnd])
         
         for col in reversed(range(colStart, colEnd)):
             # result
