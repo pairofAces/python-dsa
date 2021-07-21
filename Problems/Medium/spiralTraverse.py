@@ -103,6 +103,7 @@ class Solution2:
         # initiate for loops
         for col in range(colStart, colEnd + 1):
             # result
+            result.append(array[rowStart][col])
         
         for row in range(rowStart + 1, rowEnd + 1):
             # result
