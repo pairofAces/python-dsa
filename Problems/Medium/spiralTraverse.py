@@ -115,6 +115,15 @@ class Solution2:
         
         for col in reversed(range(colStart, colEnd)):
             # result
+                # Edge case when there's a single row in the matrix
+                # In this case, we don't want to double count the values
+                # in this row, which have already been accounted for in the
+                # first for loop
+                
+                # if the starting row is equal to the ending row
+                    # meaning, if there was just one row
+                if rowStart == rowEnd:
+                    
         
         for row in reversed(range(rowStart + 1, rowEnd)):
             # result
