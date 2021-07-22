@@ -123,7 +123,12 @@ class Solution2:
                 # if the starting row is equal to the ending row
                     # meaning, if there was just one row
                 if rowStart == rowEnd:
-                    
+                    # break the loop
+                    break
+                
+                # then append the value at the index of array -> rowEnd -> col
+                # into the result array
+                result.append(array[rowEnd][col])
         
         for row in reversed(range(rowStart + 1, rowEnd)):
             # result
