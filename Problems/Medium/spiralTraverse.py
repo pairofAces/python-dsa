@@ -132,3 +132,11 @@ class Solution2:
         
         for row in reversed(range(rowStart + 1, rowEnd)):
             # result
+                # Edge case when there's a single column in the matrix
+                # In this case, we don't want to double count the values
+                # in this column, which have already been accounted for in the
+                # second for loop
+
+            # if the starting and ending columns are equal
+            if colStart == colEnd:
+                
