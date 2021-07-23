@@ -139,4 +139,8 @@ class Solution2:
 
             # if the starting and ending columns are equal
             if colStart == colEnd:
-                
+                break
+            
+            # add the element at the index of array->row->starting column
+            # into the result input array
+            result.append(array[row][colStart])
