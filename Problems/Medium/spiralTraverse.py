@@ -144,3 +144,6 @@ class Solution2:
             # add the element at the index of array->row->starting column
             # into the result input array
             result.append(array[row][colStart])
+        
+        # use recursion to invoke the (spiralFill) function
+        spiralFill(array, rowStart + 1, rowEnd - 1, colStart + 1, colEnd - 1, result )
