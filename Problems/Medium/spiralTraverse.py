@@ -81,6 +81,13 @@ class Solution:
         # return the results array
         return result
 
+
+# Complexity Analysis:
+    # Time: O(n) time, where (n) is the number of elements in the 
+    # input array
+
+    # Space: O(n) space, where (n) is the number of elements in the 
+    # (results) array that was created
 class Solution2:
     def spiralTraversal(array):
         # create results array
