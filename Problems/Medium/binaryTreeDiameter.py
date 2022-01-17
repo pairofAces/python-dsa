@@ -4,6 +4,11 @@
 # diameter. The diameter is the length of the longest path, even
 # if the diameter doesn't pass through the root of the tree. 
 
+class TreeHelper:
+    def__init__(self, diameter, height):
+        self.diameter = diameter
+        self.height = height
+
 class BinaryTree:
     def__init__(self, value, left=None, right=None):
         self.value = value
@@ -15,6 +20,7 @@ class BinaryTree:
 
     # Space: O(h) space, where (h) is the height of the Binary Tree
     
+
 class Solution:
     def binaryTreeDiameter(tree):
         # aspirational code
@@ -45,9 +51,3 @@ class Solution:
 
         # return the TreeHelper class with the current diameter and height
         return TreeHelper(currentDiameter, currentHeight)
-
-class TreeHelper:
-    def__init__(self, diameter, height):
-        self.diameter = diameter
-        self.height = height
-        
