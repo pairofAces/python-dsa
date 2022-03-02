@@ -14,7 +14,9 @@
     # and divide the sum by k
 
 def find_averages_of_subarrays(k, arr):
+    # create a new array to store the averages of each k-length subarray
     result = []
+    
     for i in range(len(arr) - k + 1):
         # find the sum of the next 'k' elements
         _sum = 0.0
