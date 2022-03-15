@@ -13,7 +13,7 @@ class Solution:
             'D': 500,
             'M': 1000
         }
-
+        
         _res = 0
 
         for i in range(len(s) - 1):
