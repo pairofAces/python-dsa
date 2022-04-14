@@ -12,3 +12,7 @@ class Solution:
                 return True
             hashset.add(i)
         return False
+
+class Solution1:
+    def containsDup(self, nums : List[int]) -> bool:
+        return len(set(nums)) < len(nums)
