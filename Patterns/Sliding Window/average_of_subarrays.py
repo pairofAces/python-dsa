@@ -27,8 +27,36 @@ def find_averages_of_subarrays(k, arr):
     # return the result
     return result
 
+# optimized solution
+def find_avg_of_subarrays(K, arr):
+    # create a results container array
+    result = []
+    windowSum, windowStart = 0.0, 0
+    for windowEnd in range(len(arr)):
+        # add the next element
+        windowSum += arr[windowEnd]
+        # when we hit the required size of the parameter "K", 
+        # slide the window
+        if windowEnd >= K - 1:
+            # calculate the average of the "K" elements
+            # and append it into the results array
+            result.append(windowSum/K)
+
+            # subtract the element going out of the window
+            windowSum -= arr[windowStart]
+
+            # increment the windowStart index variable
+            windowStart += 1
+    # return the final array with the avg's of each subset of "K"
+    # elements
+    return result
+
 def main():
     result = find_averages_of_subarrays(5, [1, 3, 2, 6, -1, 4, 1, 8, 2])
     print("Averages of the subarrays of size k: " + str(result))
+    print("---------------")
+    print("Optimized: ")
+    res = find_avg_of_subarrays(5, [1, 3, 2, 6, -1, 4, 1, 8, 2])
+    print("Averages of the subarrays of size k: " + str(res))
 
 main()
