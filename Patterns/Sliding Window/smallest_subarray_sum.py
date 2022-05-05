@@ -4,4 +4,4 @@
 # return 0 is there isn't any
 
 def smallest_subarray_sum(s, array):
-    
+    return
