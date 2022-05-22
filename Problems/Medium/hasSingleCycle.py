@@ -15,5 +15,28 @@
     # every element in the array is visited exactly once before landing on the 
     # starting index
 
+
+
 def hasSingleCycle(array):
-    
+    # create counters to keep record
+    numElementsVisited = 0
+    currentIdx = 0
+
+    # traverse the input array as long as the number of elements 
+    # visited is less than the length of the input array
+    while numElementsVisited < len(array):
+        if numElementsVisited > 0 and currentIdx == 0:
+            return False
+        numElementsVisited += 1
+        # update the current index with a helper method
+        currentIdx = getNextIdx(currentIdx, array)
+    return currentIdx == 0
+
+# create helper method to update the current index
+def getNextIdx(currentIdx, array):
+    jump = array[currentIdx]
+    nextIdx = (currentIdx + jump) % len(array)
+    if nextIdx >= 0:
+        return nextIdx
+    else:
+        nextIdx + len(array)
