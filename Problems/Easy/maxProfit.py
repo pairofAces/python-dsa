@@ -9,4 +9,31 @@
 
 # NOTE - cannot sell a stock before buying one
 
-def maxProfit(array):
+from typing import List
+
+
+def maxProfit(prices: List[int]):
+    # create 2 pointers to represent buying(left pointer) and selling(right pointer)
+    l, r = 0, 1
+
+    # initialize current max profit 
+    maxP = 0
+
+    # iterate through the array as long as the right pointer
+    # index location is less than the length of the input array
+    while r < len(prices):
+        # is the opporunity profitable?
+        if prices[l] < prices[r]:
+            # calculate the current profit
+            profit = prices[r] - prices[l]
+
+            # update the max profit based if there's a new max
+            maxP = max(maxP, profit)
+        else:
+            # else if the current price at the left pointer is larger than the price
+            # at right pointer, update left pointer to equal the lower price at the right pointer.
+            l = r
+        # increment the right pointer by 1
+        r += 1
+    # return the final max profit value
+    return maxP
