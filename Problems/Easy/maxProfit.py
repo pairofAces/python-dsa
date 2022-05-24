@@ -11,7 +11,9 @@
 
 from typing import List
 
-
+# Time Complexity: O(n) time, where (n) is the length of the input list
+# Space Complexity: O(1) space, since no external data structures are being used other than
+# creating 2 variables used as pointers
 def maxProfit(prices: List[int]):
     # create 2 pointers to represent buying(left pointer) and selling(right pointer)
     l, r = 0, 1
