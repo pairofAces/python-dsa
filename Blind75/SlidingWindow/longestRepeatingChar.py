@@ -7,6 +7,10 @@
 # Return the length of the longest substring containing the same
 # letter you can get after peforming the above operations.
 
+# example input: s = "ABAB", k = 2
+# example output: 4
+# explanation: replace the 2 'A's with 2 'B's or vice versa
+
 def charaterReplacement(s: str, k: int ):
     count = {}
     res = 0
